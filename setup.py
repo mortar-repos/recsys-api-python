@@ -20,6 +20,9 @@ setup(name='recsys-api-python',
       author='Mortar Data',
       author_email='info@mortardata.com',
       url='http://github.com/mortardata/recsys-api-python',
+      namespace_packages = [
+                  'mortar_recsys'
+      ],
       packages=[
           'mortar_recsys.api'
       ],

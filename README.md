@@ -7,15 +7,15 @@ The Mortar Recsys API Client for Python is a Python wrapper to interact with the
 To get recommendations for a single item id:
 
 ```python
-from recsys.api.v1 import API
-from recsys.api.v1 import items
+from mortar_recsys.api.v1.api import API
+from mortar_recsys.api.v1 import items
 
 ### recsys credentials
-email = 'myemail@me.org'
+api_id  = 'my-API-id'
 api_key = 'my-API-key'
 
 ### get results
-api = API(email, api_key)
+api = API(api_id, api_key)
 results = items.get_items(api, item_id)
 ```
 
@@ -24,30 +24,30 @@ results = items.get_items(api, item_id)
 To get recommendations for multiple item ids:
 
 ```python
-from recsys.api.v1 import API
-from recsys.api.v1 import multisources
+from mortar_recsys.api.v1.api import API
+from mortar_recsys.api.v1 import multisources
 
 ### recsys credentials
-email = 'myemail@me.org'
+api_id  = 'my-API-id'
 api_key = 'my-API-key'
 
 ### get results
-api = API(email, api_key)
+api = API(api_id, api_key)
 results = multisources.get_items(api, [item_id1, item_id2])
 ```
 
 ## Recommendations For User
 
 ```python
-from recsys.api.v1 import API
-from recsys.api.v1 import users
+from mortar_recsys.api.v1.api import API
+from mortar_recsys.api.v1 import users
 
 ### recsys credentials
-email = 'myemail@me.org'
+api_id  = 'my-API-id'
 api_key = 'my-API-key'
 
 ### get results
-api = API(email, api_key)
+api = API(api_id, api_key)
 results = users.get_items(api, user_id)
 ```
 
